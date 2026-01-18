@@ -1,0 +1,25 @@
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: linear-gradient(to right, #3b82f6, #8b5cf6);
+    width: 0%;
+    z-index: 9999;
+    transition: width 0.3s ease;
+}
+
+.error-shake {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
